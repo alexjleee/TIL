@@ -6,7 +6,7 @@ A Collection of concise markdown documents of what I learned today.
 
 Inspired by [jbranchaud/til](https://github.com/jbranchaud/til)
 
-_0 TILs and counting..._
+_3 TILs and counting..._
 
 ---
 
@@ -21,6 +21,7 @@ _0 TILs and counting..._
 ## Categories
 
 - [Git](#git)
+- [JavaScript](#javascript)
 
 ---
 
@@ -28,3 +29,9 @@ _0 TILs and counting..._
 
 - [Git Basics](/Git/git-basics.md)
 - [Github Basics](/Git/github-basics.md)
+
+---
+
+## JavaScript
+
+- [Making HTTP Request](/JavaScript/making-http-request.md)
