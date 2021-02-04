@@ -6,7 +6,7 @@ A Collection of concise markdown documents of what I learned today.
 
 Inspired by [jbranchaud/til](https://github.com/jbranchaud/til)
 
-_4 TILs and counting..._
+_5 TILs and counting..._
 
 ---
 
@@ -36,3 +36,4 @@ _4 TILs and counting..._
 
 - [Async & Await](/JavaScript/async-and-awiat.md)
 - [Making HTTP Request](/JavaScript/making-http-request.md)
+- [Prototypes & Classes](/JavaScript/prototypes-and-classes.md)
