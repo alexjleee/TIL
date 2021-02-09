@@ -6,7 +6,7 @@ A Collection of concise markdown documents of what I learned today.
 
 Inspired by [jbranchaud/til](https://github.com/jbranchaud/til)
 
-_9 TILs and counting..._
+_10 TILs and counting..._
 
 ---
 
@@ -36,6 +36,7 @@ _9 TILs and counting..._
 
 - [Async & Await](/JavaScript/async-and-await.md)
 - [Encapsulation](/JavaScript/encapsulation.md)
+0 [Execution Context](/JavaScript/execution-context.md)
 - [Getter & Setter](/JavaScript/getter-and-setter.md)
 - [JS Engine & Runtime](/JavaScript/js-engine-and-runtime.md)
 - [Making HTTP Request](/JavaScript/making-http-request.md)
