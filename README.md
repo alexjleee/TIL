@@ -6,7 +6,7 @@ A Collection of concise markdown documents of what I learned today.
 
 Inspired by [jbranchaud/til](https://github.com/jbranchaud/til)
 
-_10 TILs and counting..._
+_11 TILs and counting..._
 
 ---
 
@@ -41,4 +41,5 @@ _10 TILs and counting..._
 - [JS Engine & Runtime](/JavaScript/js-engine-and-runtime.md)
 - [Making HTTP Request](/JavaScript/making-http-request.md)
 - [Prototypes & Classes](/JavaScript/prototypes-and-classes.md)
+- [Scope](/JavaScript/scope.md)
 - [Value of 'this'](JavaScript/value-of-this.md)
