@@ -6,7 +6,7 @@ A Collection of concise markdown documents of what I learned today.
 
 Inspired by [jbranchaud/til](https://github.com/jbranchaud/til)
 
-_16 TILs and counting..._
+_17 TILs and counting..._
 
 ---
 
@@ -44,6 +44,7 @@ _16 TILs and counting..._
 - [Making HTTP Request](/JavaScript/making-http-request.md)
 - [Prototypes & Classes](/JavaScript/prototypes-and-classes.md)
 - [Replacing IIFE](/JavaScript/replacing-iife.md)
+- [Rounding Numbers](/JavaScript/rounding-numbers.md)
 - [Short Circuit Evaluation](/JavaScript/short-circuit-evaluation.md)
 - [Scope](/JavaScript/scope.md)
 - [SVG Animation](/JavaScript/svg-animation.md)
