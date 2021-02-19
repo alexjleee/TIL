@@ -6,7 +6,7 @@ A Collection of concise markdown documents of what I learned today.
 
 Inspired by [jbranchaud/til](https://github.com/jbranchaud/til)
 
-_18 TILs and counting..._
+_19 TILs and counting..._
 
 ---
 
@@ -48,5 +48,6 @@ _18 TILs and counting..._
 - [Rounding Numbers](/JavaScript/rounding-numbers.md)
 - [Short Circuit Evaluation](/JavaScript/short-circuit-evaluation.md)
 - [Scope](/JavaScript/scope.md)
+- [setTimeout Error Handling](/JavaScript/setTimeout-error-handling.md)
 - [SVG Animation](/JavaScript/svg-animation.md)
 - [Value of 'this'](JavaScript/value-of-this.md)
