@@ -6,7 +6,7 @@ A Collection of concise markdown documents of what I learned today.
 
 Inspired by [jbranchaud/til](https://github.com/jbranchaud/til)
 
-_21 TILs and counting..._
+_22 TILs and counting..._
 
 ---
 
@@ -53,3 +53,9 @@ _21 TILs and counting..._
 - [Storing Data Inside DOM Element](/JavaScript/storing-data-inside-dom-element.md)
 - [SVG Animation](/JavaScript/svg-animation.md)
 - [Value of 'this'](JavaScript/value-of-this.md)
+
+---
+
+## Regular Expressions
+
+- [Regular Expressions Basics](/Regex/regular-expressions-basics.md)
