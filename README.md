@@ -59,3 +59,4 @@ _22 TILs and counting..._
 ## Regular Expressions
 
 - [Regular Expressions Basics](/Regex/regular-expressions-basics.md)
+- [Validating Passwords in JS](/Regex/validating-passwords-in-js.md)
