@@ -36,9 +36,9 @@ Regular Expressions (_regex_ for short) are special text strings used to search 
 - {1,2} : quantifier : between 1 and 2
   - `/c\w{2,3}/g` : **cat cara**mel **code cod cas**tle
   - `/c\w{3,}/g` : cat **caramel code** cod **castle**
-- + : plus : 1 or more
+- \+ : plus : 1 or more
   - `/colou+r/g` : color **colour colouur colouuur**
-- * : star : 0 or more
+- \* : star : 0 or more
   - `/colou+r/g` : **color colour colouur colouuur**  
 - ? : optional : 0 or 1
   - `/colou+r/g` : **color colour** colouur colouuur
@@ -61,6 +61,16 @@ Regular Expressions (_regex_ for short) are special text strings used to search 
 - (abc) : capturing group
   - `/(\d{3})[ -]?(\d{3})[ -]?(\d{4})/g` : 123 456 7890 -> group#1 123, group#2 456, group#3 7890
 - (?:abc) : non-capturing group
-  -`/(\d{3})[ -]?(?:\d{3})[ -]?(?:\d{4})/g` : 123 456 7890 -> group#1 123
+  - `/(\d{3})[ -]?(?:\d{3})[ -]?(?:\d{4})/g` : 123 456 7890 -> group#1 123
 - (?<name>abc) : named capturing group
-  -`/(?<areacode>\d{3})[ -]?(?:\d{3})[ -]?(?:\d{4})/g` : 123 456 7890 -> areacode 123
+  - `/(?<areacode>\d{3})[ -]?(?:\d{3})[ -]?(?:\d{4})/g` : 123 456 7890 -> areacode 123
+
+## Lookaround
+- a(?=b) : positive lookahead : match 'a' only if it is followed by 'b'
+  - `/\d+(?=\s?dollars?)/g` : **15** dollars, **1** dollar, five dollars
+- a(?!b) : negative lookahead : match 'a' only if it is NOT followed by 'b'
+  - `/\d+(?!\$)/g` : 1$ **5**€ **10**£ **1000**₩ **10**
+- (?<=a)b : positive lookbehind : match 'a' only if there is 'b' before it
+  - `/(?<=[tT]he )\w+/g` : The **Fox** and the **Hound**
+- (?<!a)b : negative lookbehind : match 'a' only if there is NO 'b' before it
+  - `/(?<![tT]he )\b\w+/g` : **The** Fox **and the** Hound
