@@ -6,7 +6,7 @@ A Collection of concise markdown documents of what I learned today.
 
 Inspired by [jbranchaud/til](https://github.com/jbranchaud/til)
 
-_22 TILs and counting..._
+_26 TILs and counting..._
 
 ---
 
@@ -42,6 +42,7 @@ _22 TILs and counting..._
 - [Getter & Setter](/JavaScript/getter-and-setter.md)
 - [Hoisting](/JavaScript/hoisting.md)
 - [JS Engine & Runtime](/JavaScript/js-engine-and-runtime.md)
+- [Keyboard Event](/JavaScript/keyboard-event.md)
 - [Making HTTP Request](/JavaScript/making-http-request.md)
 - [Modules](/JavaScript/modules.md)
 - [Prototypes & Classes](/JavaScript/prototypes-and-classes.md)
