@@ -6,7 +6,7 @@ A Collection of concise markdown documents of what I learned today.
 
 Inspired by [jbranchaud/til](https://github.com/jbranchaud/til)
 
-_35 TILs and counting..._
+_36 TILs and counting..._
 
 ---
 
@@ -22,6 +22,12 @@ _35 TILs and counting..._
 
 - [Git](#git)
 - [JavaScript](#javascript)
+
+---
+
+## CLI
+
+- [CLI Basics](/CLI/cli-basics.md)
 
 ---
 
