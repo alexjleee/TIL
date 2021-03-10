@@ -6,7 +6,7 @@ A Collection of concise markdown documents of what I learned today.
 
 Inspired by [jbranchaud/til](https://github.com/jbranchaud/til)
 
-_37 TILs and counting..._
+_38 TILs and counting..._
 
 ---
 
@@ -69,6 +69,7 @@ _37 TILs and counting..._
 - [Symbol](/JavaScript/symbol.md)
 - [Using URL Hash In JS](/JavaScript/using-url-hash-in-js.md)
 - [Value of 'this'](JavaScript/value-of-this.md)
+- [What Exactly Is The DOM](JavaScript/what-exactly-is-the-dom.md)
 
 ---
 
