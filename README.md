@@ -6,7 +6,7 @@ A Collection of concise markdown documents of what I learned today.
 
 Inspired by [jbranchaud/til](https://github.com/jbranchaud/til)
 
-_39 TILs and counting..._
+_40 TILs and counting..._
 
 ---
 
@@ -47,6 +47,7 @@ _39 TILs and counting..._
 - [Debounce Function](/JavaScript/debounce-function.md)
 - [Encapsulation](/JavaScript/encapsulation.md)
 - [Event Handling](/JavaScript/event-handling.md)
+- [Event Propagation](/JavaScript/event-propagation.md)
 - [Execution Context](/JavaScript/execution-context.md)
 - [Getter & Setter](/JavaScript/getter-and-setter.md)
 - [Hoisting](/JavaScript/hoisting.md)
