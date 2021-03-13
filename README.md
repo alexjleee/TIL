@@ -6,7 +6,7 @@ A Collection of concise markdown documents of what I learned today.
 
 Inspired by [jbranchaud/til](https://github.com/jbranchaud/til)
 
-_40 TILs and counting..._
+_41 TILs and counting..._
 
 ---
 
@@ -78,6 +78,7 @@ _40 TILs and counting..._
 ## NodeJS
 
 - [About Node.js](/NodeJS/about-nodejs.md)
+- [How To Create NodeJS Command-Line Package](/NodeJS/create-nodejs-command-line-package.md)
 - [Modules](/NodeJS/modules.md)
 - [package.json](/NodeJS/packagejson.md)
 
