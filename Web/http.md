@@ -86,3 +86,41 @@ The request line consists of 3 parts: the _request method_, the _request-URI_ an
     To delete the targeted resource from the server
 
     - Be careful not to delete data unintentionally
+
+#### Request URI
+
+  - **Request-URI** identifies the resource upon which to apply the request.
+
+1. **abs_path**
+
+    The most common form of Request-URI. The absolute path is used to identify a resource on an origin server or gateway. The network location of the URI (authority) must be transmitted in the Host header field. 
+
+    - Example : 
+  
+      `GET /pub/WWW/TheProject.html HTTP/1.1`
+      
+      `Host: www.w3.org`
+
+    It cannot be empty. If there is nothing in the absolute path of the original URI, it must be given as `/` (the server root).
+
+2. **absoluteURI**
+
+    The absoluteURI is used when the HTTP request is made to a proxy server.
+
+    - Example : 
+    
+      `GET http://www.w3.org/pub/WWW/TheProject.html HTTP/1.1`
+
+3. Asterisk(`*`)
+
+    The asterisk(`*`) is used when the HTTP request applies to the server itself. It is used with the `OPTION` method, which does not require the specification of a resource.
+
+    - Example : 
+    
+      `OPTIONS * HTTP/1.1`
+
+- cf. URI (Uniform Resource Identifier) : URI is an **identifier** of a specific resource. URI identifies a resource by location, or name or both.
+  
+- cf. URL (Uniform Resource Locator) : URL is a specific subset of URI, meaning all URLs are URIs but not all URIs are URLs. URL provides information about how to fetch a resource from its **location**. URL starts with a scheme (`http, mailto, ftp, file, ...`) and usually contains the network hostname (`somewebsite.com`) and often a document path (`/mypage.html`).
+  - Scheme://Domain:Prot/Path?QueryString#FragmentId
+
