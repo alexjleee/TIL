@@ -9,16 +9,17 @@ Popular View Engines
 
 ## EJS
 
-Install
+### Install
 
 ```$ npm install ejs```
 
-Syntax
+### Syntax
 
   - `<%` ... `%>` : control-flow, no output
-  - `<%=` ... `%>` : output the value into the template
+  - `<%=` ... `%>` : output the value into the template (escape the HTML tags)
+  - `<%-` ... `%>` : outputs the unescaped value into the template (HTML tags are translated/unescaped)
 
-How To Use
+### How To Use
 
   ```javascript
   // app.js
@@ -72,3 +73,58 @@ How To Use
   ```
 
 - **Server-Side Rendering** : The EJS templates are processed through the EJS view engine on the server and the view engine makes a HTML based on the template and hand it over to the client. 
+
+### Partials Templates
+Parts of the template that can be reused in different views.
+
+  ```javascript
+  // views/partials/head.ejs
+  <head>
+    <meta charset="UTF=8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyBlog | <%= title %></title>
+  </head>
+  ```
+
+  ```javascript
+  // views/partials/title.ejs
+  <div class="title">
+    <a href="/"><h1>MyBlog</h1></a>
+    <p>Welcome to MyBlog</p>
+  </div>
+  ```
+
+  ```javascript
+  // views/index.ejs
+  <html lang="en">
+    <%- include('./partials.head.ejs') %>
+    <body>
+      <%- include('./partials.title.ejs') %>
+      <div class="content">
+        <h2>Blog Posts</h2>
+        <% if (blogs.length > 0) { %>
+          <% blogs.forEach((blog) => { %>
+            <h3 class="title"><%= blog.title %></h3>
+            <p class="snippet"><%= blog.snippet %></p>
+          <% }) %>
+        <% } else { %>
+          <p>No Blog Post</p>
+        <% } %>
+      </div>
+    </body>
+  </html>
+  ```
+
+  ```javascript
+  // views/about.ejs
+  <html lang="en">
+    <%- include('./partials.head.ejs') %>
+    <body>
+      <%- include('./partials.title.ejs') %>
+      <div class="content">
+        <h2>About</h2>
+        <p>Hi, I'm Alex! And this is my blog.</p>
+      </div>
+    </body>
+  </html>
+  ```
