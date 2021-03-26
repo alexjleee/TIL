@@ -109,3 +109,41 @@ require('./greet.js')();
 ```
 
 In the above case, `exports = function greet() {}` doesn't add a key-value pair to the `module.exports` object. Instead, it makes `exports` lose the reference to the `module.exports` object and make it reference the `greet` function.
+
+## CJS vs. ESM
+Node had its own module system, **Common JS (CJS)**. Since v14, Node.js introduced support for **ES modules (ESM)** (with `import` and `export`) but it requires using `.mjs` extension or configuration option in `package.json`, with a `type` property set to `module` - this will make your files be interpreted ad ESM, not as CJS.
+
+### Syntaxes
+  1. CJS
+  ```javascript
+  // utils.js
+  exports.add = (a, b) => {
+    return a + b;
+  }
+  exports.sub = (a, b) => {
+    return a - b;
+  }
+  ```
+  ```javascript
+  //main.js
+  const utils = require('./utils');
+  utils.add(4, 2); // 6
+  utils.sub(4, 2); // 2
+  ```
+
+  2. ESM
+  ```javascript
+  // utils.js
+  export const add = (a, b) => {
+    return a + b;
+  }
+  export const sub = (a, b) => {
+    return a - b;
+  }
+  ```
+  ```javascript
+  // main.js
+  import {add, sub} from './utils.js';
+  add(4, 2); // 6
+  sub(4, 2); // 2
+  ```
