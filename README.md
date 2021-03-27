@@ -6,7 +6,7 @@ A Collection of concise markdown documents of what I learned today.
 
 Inspired by [jbranchaud/til](https://github.com/jbranchaud/til)
 
-_48 TILs and counting..._
+_49 TILs and counting..._
 
 ---
 
@@ -100,3 +100,4 @@ _48 TILs and counting..._
 ## Web
 
 - [HTTP](/Web/http.md)
+- [REST API](/Web/rest-api.md)
