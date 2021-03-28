@@ -58,3 +58,40 @@ For an API to be _RESTful_, it needs to satisfy the following 6 guiding constrai
   - Ther can be multiple intermediate servers between the client and the end server
 6. Code On Demand (Optional)
   - The server can temporarily extend the functionality of a client by transferring executable code
+
+## Design Guide
+
+1. Naming convention
+
+- Use Nouns not verbs
+  - `/users` O
+  - `/getUsers` X : _HTTP method has the verb!_
+- Use plural for a collection of resources
+  - `/users` O
+  - `/user` X 
+- Don't append `/` at the end
+  - `/users` O
+  - `/users/` X
+
+2. Resource hierarchy
+
+- Depict resource hierarchy in URI
+  - `/posts/:postId/comments/:commentId`
+
+3. Handling errors by returning HTTP response status codes
+- [MDN HTTP response status codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)
+
+4. Filtering, sorting and pagination
+
+- Filtering
+  - `/products?material=wood`
+- Sorting
+  - `/products?sort=-name`
+- Pagination
+  - `/products?offset=30&limit=10`
+
+5. Versioning
+
+- If there's any change in the API, you should provide different versions to avoid problems
+- The versioning is usually at the start of the API path
+  - `/v1/users`
