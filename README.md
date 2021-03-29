@@ -6,7 +6,7 @@ A Collection of concise markdown documents of what I learned today.
 
 Inspired by [jbranchaud/til](https://github.com/jbranchaud/til)
 
-_49 TILs and counting..._
+_50 TILs and counting..._
 
 ---
 
@@ -94,6 +94,12 @@ _49 TILs and counting..._
 
 - [Regular Expressions Basics](/Regex/regular-expressions-basics.md)
 - [Validating Passwords in JS](/Regex/validating-passwords-in-js.md)
+
+---
+
+## TypeScript
+
+- [TypeScript Intro](/TypeScript/typescript-intro.md)
 
 ---
 
