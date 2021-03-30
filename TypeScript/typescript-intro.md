@@ -106,3 +106,82 @@ tupleArr.push('Alex');
 tupleArr.push(27);
 tupleArr.push('korean'); // err
 ```
+
+## Union Types
+
+TS allows you to build new types by combining existing types
+
+```typescript
+let userID: number | string;
+
+userID = 1;
+userID = '1';
+```
+
+```typescript
+const mixedArr: (number | string)[] = [];
+
+mixedArr.push(1);
+mixedArr.push('2');
+mixedArr.push(true); // error
+```
+
+```typescript
+function printID(userID: number | string) {
+  console.log(userID.toUpperCase()); // error
+}
+// '.toUpperCase()' method is only valid for string, not for number
+```
+
+## Type Aliases
+
+TS allows you to name your custom types
+
+```typescript
+type alphanumeric = string | number;
+
+let userID: alphanumeric;
+let studentID: alphanumeric;
+```
+
+A `type` can extend another `type` via intersections (`$`)
+
+```typescript
+type Vehicle = {
+  wheels: number
+}
+
+type Car = Vehicle & {
+  engine: string
+}
+```
+
+But you CANNOT change a `type` after it is created
+
+```typescript
+type Car = {
+  color: string
+}
+
+type Car = {
+  maxSpeed: number
+} // error : Duplicate identifier 'Car'
+```
+
+- cf. An `interface` can have multiple merged declarations
+    ```typescript
+    interface Car {
+      model: string
+      color: string
+    }
+
+    interface Car {
+      topSpeed: number
+    }
+
+    const myCar: Car = {
+      model: 'Aventador S',
+      color: 'black',
+      topSpeed: 350
+    }
+    ```
