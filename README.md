@@ -6,7 +6,7 @@ A Collection of concise markdown documents of what I learned today.
 
 Inspired by [jbranchaud/til](https://github.com/jbranchaud/til)
 
-_50 TILs and counting..._
+_51 TILs and counting..._
 
 ---
 
@@ -99,6 +99,7 @@ _50 TILs and counting..._
 
 ## TypeScript
 
+- [Interfaces](/TypeScript/interfaces.md)
 - [TypeScript Intro](/TypeScript/typescript-intro.md)
 
 ---
