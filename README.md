@@ -6,7 +6,7 @@ A Collection of concise markdown documents of what I learned today.
 
 Inspired by [jbranchaud/til](https://github.com/jbranchaud/til)
 
-_51 TILs and counting..._
+_52 TILs and counting..._
 
 ---
 
@@ -69,6 +69,7 @@ _51 TILs and counting..._
 - [Storing Data Inside DOM Element](/JavaScript/storing-data-inside-dom-element.md)
 - [SVG Animation](/JavaScript/svg-animation.md)
 - [Symbol](/JavaScript/symbol.md)
+- [Unit Testing With Mocha & Chai](JavaScript/unit-testing-with-mocha-and-chai.md)
 - [Using URL Hash In JS](/JavaScript/using-url-hash-in-js.md)
 - [Value of 'this'](JavaScript/value-of-this.md)
 - [What Exactly Is The DOM](JavaScript/what-exactly-is-the-dom.md)
